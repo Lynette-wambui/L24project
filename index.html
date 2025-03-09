@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Array in JS</title></head>
+    <body>
+        <center>
+            <h2>Car brands</h2>
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <script>
+                var cars = ["Nissan", "BMW", "Mercedes Benz", "Toyota", "Volkswagen", "Jeep"];
+                document.getElementById("result1").innerHTML = cars;
+                document.getElementById("result2").innerHTML = cars.length;
+             </script>
+             <br>
+             <br>
+             <hr>
+             
+ 
+
+           
+        <h2>Favourite colours .</h2>
+        <h4> Join(), pop() and Push().</h4>
+        <p id="result3"></p>
+        <p id="result4"></p>
+        <p id="result5"></p>
+        <p id="result6"></p>
+        <script>
+            var colours = ["Maroon", "Pink", "Brown", "Purple"];
+            //Display the original array
+            document.getElementById("result3").innerHTML = "Original array:" + colours;
+            //Display array with """"
+            document.getElementById("result4").innerHTML = "Array with join:" + colours.join("*");
+            //Add a new element to the end of the array using push()
+            colours.push("Grey")
+            document.getElementById("result5").innerHTML = "Array after push():" + colours;
+            //Remove the last element using pop()
+            colours.pop();
+            document.getElementById("result6").innerHTML = "Array after pop():" + colours;
+        </script>
+        <br>
+        <hr>
+        <h2>Javascript Functions.</h2>
+
+        <p>Do a calculation then find the result.</p>
+        <p id="demo"></p>
+        <script>
+            function add(a, b) {
+                return a + b;
+            }
+            function average(a, b) {
+                return add (a + b) / 2;
+            }
+            let result7 = average(10, 20);
+            document.getElementById("demo").innerHTML = result7;
+        </script>
+        </center>
+
+    </body>
+</html>
